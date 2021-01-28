@@ -32,35 +32,111 @@
 .LandingPage-Name {
   font-size: calc(70px + 3vmin);
   margin: 0 auto;
-  padding: 0;
+  margin-Top: -16px; 
+  margin-Bottom: -16px;
 }
 
 .LandingPage-Name:hover {
-  font-size: calc(80px + 3vmin);
-  transition: all 1s ease-in-out;
+  font-size: calc(75px + 3vmin);
+  transition: all 1s ease;
+}
+
+.LandingPage-Desc {
+  font-size: calc(10px + 2vmin);
+}
+
+.Icon-Overlay {
+  position: fixed;
+  right: 0%;
+  top: 0%;
+  z-Index: 1000;
+  height: 100vh;
+  background: #ffffff;
+  width: clamp(1.875em, 3vw, 1.25px);
+}
+
+.Icon-Image {
+  left: 20%;
+  width: clamp(1.25em, 1vw, .75em);
+  position: relative;
+  transition: all .5s ease;
+}
+
+.Icon-Image:hover {
+  width: clamp(1.45em, 2vw, .15em);
+}
+
+.AppBar-button { 
+  font-size: clamp(1.45em, 2vw, .15em);
+  transition: all .25s ease;
+  position: relative;
+  color: black;
+  padding: 4px;
+  border: 2px solid #000000;
+  background: none;
+  margin-Left: auto;
+}
+
+.AppBar-button:hover {
+  font-size: clamp(1.65em, 2.5vw, .25em);
+  transform: translateY(1px);
+  transition: all .25s ease;
+  border: 2px solid #000000;
+}
+
+.AppBar-button:active {
+  background-color: #ffffe0;
+  box-shadow: 0 5px #666;
+  transition: all .25s ease;
 }
 
 
-@media only screen and (max-width: 700px) {
-  .LandingPage-Name {
-    font-size: calc(50px + 3vmin);
-    margin: 0 auto;
-  }
-  
-  .LandingPage-Name:hover {
-    font-size: calc(60px + 3vmin);
-    transition: all 1s ease-in-out;
-  }
+@media only screen and (max-width: 43.75em) {
+
   .LandingPage-NameBox {
     border: 10px solid white;
-    min-width: 50vw;
+    min-width: 40vw;
     box-Shadow: 0 5px #666;
-    max-height: 50vw;
+    max-height: 30vw;
     height: 200px;
     width: 400px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
   }
+
+  .LandingPage-Name{
+    font-size: calc(35px + 3vmin);
+    margin-bottom: -5px;
+    margin-top: -16px;
+  }
+
+
+  .LandingPage-Name:hover {
+    font-size: calc(40px + 3vmin);
+    transition: all 1s ease;
+  }
+
+  .LandingPage-Desc {
+    font-size: calc(8px + 2vmin);
+  }
+
+  .Icon-Overlay {
+    position: fixed;
+    right: 0%;
+    top: 0%;
+    z-Index: 1000;
+    height: 100vh;
+    background: #ffffff;
+    width: 4vw;
+    min-width: 4vw;
+  }
+
+  .Icon-Image {
+    margin: auto;
+    width: clamp(1.25em, 1vw, .75em);
+    position: relative;
+  }
 }
+
 
