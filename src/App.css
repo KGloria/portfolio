@@ -1,3 +1,8 @@
+* {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 .App {
   text-align: center;
 }
@@ -15,30 +20,6 @@
 
 .App-link {
   color: #fff;
-}
-
-.LandingPage-NameBox {
-  border: 10px solid white;
-  min-width: 50vw;
-  box-Shadow: 0 5px #666;
-  max-height: 50vw;
-  height: 300px;
-  width: 600px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-.LandingPage-Name {
-  font-size: calc(70px + 3vmin);
-  margin: 0 auto;
-  margin-Top: -16px; 
-  margin-Bottom: -16px;
-}
-
-.LandingPage-Name:hover {
-  font-size: calc(75px + 3vmin);
-  transition: all 1s ease;
 }
 
 .LandingPage-Desc {
@@ -66,27 +47,8 @@
   width: clamp(1.45em, 2vw, .15em);
 }
 
-.AppBar-button { 
-  font-size: clamp(1.45em, 2vw, .15em);
-  transition: all .25s ease;
-  position: relative;
-  color: black;
-  padding: 4px;
-  border: 2px solid #000000;
-  background: none;
-  margin-Left: auto;
-}
-
-.AppBar-button:hover {
-  font-size: clamp(1.65em, 2.5vw, .25em);
-  transform: translateY(1px);
-  transition: all .25s ease;
-  border: 2px solid #000000;
-}
-
-.AppBar-button:active {
-  background-color: #ffffe0;
-  box-shadow: 0 5px #666;
+.logo:hover {
+  transform: translateY(-2.5px);
   transition: all .25s ease;
 }
 
